@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "MinhaFonteLocal";
+    src: url("/utils/FrizQuadrataTT.ttf");
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        width: 1140px;
+        /* Largura da página para telas grandes */
+        margin: 0 auto;
+        /* Centraliza a página horizontalmente */
+    }
+}
+
+/* Estilos para telas médias (tablets em paisagem e desktops pequenos) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    body {
+        width: 960px;
+        /* Largura da página para telas médias */
+        margin: 0 auto;
+        /* Centraliza a página horizontalmente */
+    }
+}
+
+/* Estilos para telas pequenas 
+  
+  /* Estilos para telas pequenas (tablets em retrato e smartphones) */
+@media only screen and (max-width: 767px) {
+    body {
+        width: 100%;
+        /* Largura da página para telas pequenas (tamanho completo) */
+        margin: 0;
+        /* Remove as margens da página */
+    }
+
+}
+
+body {
+    background-color: black;
+    font-family: "MinhaFonteLocal";
+
+}
+
+.container {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 1200px;
+ 
+
+
+
+}
+
+.header {
+    color: aliceblue;
+    font-size: 150px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+.initial_button_menu {
+    background-color: black;
+    border: 0;
+    color: aliceblue;
+    font-size: 35px;
+    margin-top: 20px;
+    font-family: "MinhaFonteLocal";
+
+    
+}
+
+.initial_button_menu:hover {
+   margin-left: 150px;
+   margin-right: 150px;
+   background: linear-gradient(to bottom, rgba(255, 0, 0, 0.2) 0%, rgba(139, 0, 0) 50%, rgba(255, 0, 0, 0.2) 100%);
+
+}
+
+

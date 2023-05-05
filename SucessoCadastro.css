@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "MinhaFonteUsuario";
+    src: url("/utils/TEACPSS_.ttf");
+}
+@font-face {
+    font-family: "MinhaFonteLocal";
+    src: url("/utils/FrizQuadrataTT.ttf");
+}
+
+
+body {
+    background-color: #1a1c23;
+    font-family: "MinhaFonteLocal";
+
+}
+
+h1{
+  color: aliceblue;
+}
+
+h2{
+  color: #4BB543;
+}
+
+.sucess_form{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1080px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:4px solid black;
+}

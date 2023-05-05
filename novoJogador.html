@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="novoJogador.css">
+</head>
+<body>
+  
+ <h1 class="user_title">Criando Usuário</h1>
+
+    <div class="user_container">
+        <form id="user-form">
+            <table>
+              <tr>
+                <td><label for="name">Nome:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+              </tr>
+              <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+              </tr>
+              <tr>
+                <td><label for="phone">Telefone:</label></td>
+                <td><input type="tel" id="phone" name="phone"></td>
+              </tr>
+              <tr>
+                <td><label for="gender">Gênero:</label></td>
+                <td>
+                  <select id="gender" name="gender">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="não binário">Não Binário</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="country">País:</label></td>
+                <td><input type="text" id="country" name="country"></td>
+              </tr>
+            
+              <div id="success-message"></div>
+              <div id="error-message"></div>
+              
+            </table>
+            <div>
+            <tr>
+              <td><button type="submit">Cadastrar</button></td>
+            </tr>
+          </div>
+          </form>
+    </div>
+    <script src="userForm.js"></script>
+    
+
+</body>
+</html>
