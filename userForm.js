@@ -5,7 +5,7 @@ const form = document.querySelector('#user-form');
     const formData = new FormData(form);
     const user = Object.fromEntries(formData.entries()); // Converte o FormData em um objeto
 
-    fetch('http://api.questlogbrasil.xyz/users2', {
+    fetch('200.98.161.74/users2', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -27,6 +27,7 @@ const form = document.querySelector('#user-form');
         errorMessage = 'Este endereço de email já está em uso. Por favor, tente outro.';
       } else {
         errorMessage = 'Ocorreu um erro ao cadastrar o usuário. Por favor, tente novamente mais tarde.';
+        console.error(error);
       }
       const errorMessageElement = document.querySelector('#error-message');
       errorMessageElement.textContent = errorMessage;
