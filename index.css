@@ -35,6 +35,19 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+
+a:visited{
+    color: aliceblue;
+}
+
 body {
     background-color: black;
     font-family: "MinhaFonteLocal";
