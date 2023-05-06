@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="novoJogador.css">
 </head>
-<body>
+
+  
   
  <h1 class="user_title">Criando Usuário</h1>
 
@@ -42,8 +43,12 @@
                 <td><input type="text" id="country" name="country"></td>
               </tr>
               <tr>
-              <td><input type="hidden" name="origin" id="origin" value="Teste"></td>
+              <td><input type="hidden" name="origin" id="origin" value="Quest Log Brasil"></td>
               </tr>
+              <tr>
+                <td><input type="hidden" name="created_at" id="created_at" value=""></td>
+                </tr>
+              
               <div id="success-message"></div>
               <div id="error-message"></div>
               
@@ -55,6 +60,19 @@
           </div>
           </form>
     </div>
+    </div>
+
+
+    <script>
+      // Seleciona o campo oculto
+      var createAtField = document.getElementById("created_at");
+
+      // Obtém a data e hora atual no formato UTC
+      var now = new Date().toISOString();
+
+      // Define o valor do campo oculto como a data e hora atual
+      createAtField.value = now;
+    </script>
     <script src="userForm.js"></script>
     
 

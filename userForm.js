@@ -5,7 +5,7 @@ const form = document.querySelector('#user-form');
     const formData = new FormData(form);
     const user = Object.fromEntries(formData.entries()); // Converte o FormData em um objeto
 
-    fetch('200.98.161.74/users2', {
+    fetch('http://200.98.161.74/users2', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -18,7 +18,8 @@ const form = document.querySelector('#user-form');
         form.reset(); // Limpa os campos do formulário
         window.location.replace('/SucessoCadastro.html');
       } else {
-        throw new Error('Ocorreu um erro ao cadastrar o usuário.');
+        throw new Error('Ocorreu um erro ao cadastrar o usuário.', console.log(JSON.stringify(user)))
+        
       }
     })
     .catch(error => {
@@ -27,10 +28,12 @@ const form = document.querySelector('#user-form');
         errorMessage = 'Este endereço de email já está em uso. Por favor, tente outro.';
       } else {
         errorMessage = 'Ocorreu um erro ao cadastrar o usuário. Por favor, tente novamente mais tarde.';
-        console.error(error);
+      
       }
       const errorMessageElement = document.querySelector('#error-message');
       errorMessageElement.textContent = errorMessage;
     });
 
   })
+
+  
