@@ -5,7 +5,7 @@ const form = document.querySelector('#user-form');
     const formData = new FormData(form);
     const user = Object.fromEntries(formData.entries()); // Converte o FormData em um objeto
 
-    fetch('http://localhost:80/users', {
+    fetch('http://api.questlogbrasil.xyz/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -16,7 +16,7 @@ const form = document.querySelector('#user-form');
         const successMessage = document.querySelector('#success-message');
         successMessage.textContent = 'Usuário cadastrado com sucesso!';
         form.reset(); // Limpa os campos do formulário
-        window.location.replace('http://127.0.0.1:5500/SucessoCadastro.html');
+        window.location.replace('/SucessoCadastro.html');
       } else {
         throw new Error('Ocorreu um erro ao cadastrar o usuário.');
       }
