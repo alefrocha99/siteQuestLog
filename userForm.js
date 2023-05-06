@@ -5,7 +5,7 @@ const form = document.querySelector('#user-form');
     const formData = new FormData(form);
     const user = Object.fromEntries(formData.entries()); // Converte o FormData em um objeto
 
-    fetch('http://api.questlogbrasil.xyz/users', {
+    fetch('api.questlogbrasil.xyz/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
